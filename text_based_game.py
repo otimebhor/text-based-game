@@ -20,13 +20,13 @@ def start_game():
                 if ans == 'around': #what happens if the player chooses 'around'
                     print('You went around reached the other side of the lake.')
                 elif ans == 'across':
-                    print('You managed to get across but were bit my a fish and lost 5 health')
+                    print('You managed to get across but were bit by a fish and lost 5 health')
                     health -= 5
                     print(f'You have {health} health left.')
 
                 ans = input('You notice a house or a river. Which do you go to? ') 
                 if ans == 'house': #what happens if player chooses 'house'
-                    print('You go to the house and are greeted by the owner. He does not like and you lose 5 health')
+                    print('You go to the house and are greeted by the owner. He does not like you and you lose 5 health')
                     health -= 5
                     if health == 0:
                         print('You now have 0 health and you lost the game... ')
